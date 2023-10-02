@@ -1,0 +1,69 @@
+/*CONDICION PARA CELULAR*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    padding: 10px;
+}
+.main{
+    height: 96vh;
+    .main__section{
+        display:flex; /*forma de columna*/
+        flex-direction:column-reverse;/*invierte columna*/
+        
+        height:100%;
+        row-gap: 10px;/*da una separacion*/
+        .main__section__img{
+            background-image: url("honolulu.jpg);
+            background-position: center;
+            background-size: cover;/*contenedor diferente a la imagen*/
+            background-repeat: no-repeat;
+            width:100%;/*ancho*/
+            height:50%;  /*alto del padre*/
+        }
+           
+        
+        .main__section__texto{
+            width:100%;
+            height:50%;
+            background-color: blueviolet;
+            display:flex; /*justificdoe en todos los laterales*/
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            color:white;
+            .main__section__texto__h2{
+                font-size: 2.2rem;
+
+            }
+            .main__section__texto__p{
+                line-height: 2;
+                font-size:1.2rem;
+            }
+
+        }
+    }
+
+}
+/*CONDICIONAL*/
+/* Notebooks y destock media cueri*/
+@media screen and (min-width:991px){
+    .main{
+        .main__section{
+            flex-direction: row;/*mueve el texto al lado*/
+            row-gap: initial;
+            column-gap: 10px;
+            .main__section__texto{
+                width:100%;
+                height:40%;
+                background-color: blueviolet;
+                display:flex; /*justifico en todos los laterales*/
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+                color:white;          }
+        }
+    }
+    }

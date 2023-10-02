@@ -1,0 +1,304 @@
+/* se limpia margen y padin (margen interno)
+/*margen top(arriba),right,boton(abajo),left,(auto)para centrar solo de ancho*/
+*{ /*/asi afecta a todos los elementos SIEMPRE PONER ESTO*/
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    
+    /* mantiene el padin y la caja no se mueve/
+    overflow: auto; /mantiene el contenido adentro/
+    width tamaño del contenido
+    height:tamaño del contenido
+    margin-top: 10px ;
+    margin-right: 20px;
+    border radius a las imagenes
+    margin10px: auto centrado
+    z-index: ;
+    position: absolute; /* muevo el titulo*/
+    /*position: sticky; /*que quede la cabecera fija hay que aclarar donde */
+    /*top:0; /*para que la cabecera no pise*/
+}
+/*display:inline-block /*modifica ancho/por defecto es inline*/
+/*border: 1px solid grey;
+    top: 5vh    
+/* ENCABEZADO */
+.cabecera{
+    margin: 10;
+    padding: 500px;
+    background-color: rgb(53,58,64); /*fondo*/
+    color:white;               /*color de la letra*/
+    padding: 5px;
+    height: 10vh;   /* tamaño de la pantalla*/
+    font-size: 1.5rem; /*tamaño del bloque*/
+    font-family: Tahoma, sans-serifS;
+    display:inline ;
+    /*flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    
+    
+    
+    /*font-weight: 200;*/
+    /*flex-direction: row; //da direccion al contenedor por defecto//
+    flex-wrap= nowrap //envuelve a los hijos en el contenedor y hace que entren aunque los tenga que aplastar//
+    justify-content=flex-start  //justifica el ejeen vez de estar en columna va a estar en fila//
+    justify-content= center;(space-evely//space betwee//space-araund) muevo 
+    align-items= stretch; alinea en el eje contrario al principal 
+     */
+    /*por defecto*/
+    /*flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: nowrap;*/
+    
+} 
+.cabecera img{
+    background-position: left;
+    display: flex;
+    /*background-size: no-repeat;
+    background-size: contein; /*ocupa todo el contenedor*/
+    margin-left: 100px;
+    margin-top: 15px;
+     /*para poder modificar el tamaño de la imagen*/
+    font-size: 5rem; /*tamaño de la imagen*/
+    width: 100px; /*tamaño de la imagen*/ 
+     
+   
+
+   } 
+.cabecera h2{
+    /*display: flex;
+    justify-content: left;
+    align-items: left;
+    /*margin-left: 300px;
+    margin-right: 100px;
+    margin-bottom: 20px;*/
+    margin-top: 20px;
+    /*left: 200px;*/
+    
+
+    }       
+.listaC{    /* cabecera*/
+    display: flex;
+   
+    list-style: none; /*saca los circulitos que viene por defecto*/ 
+    margin-left: 100px;
+    margin-top: 0;
+    margin-bottom: 0; /*no funciona en el footer*/
+    margin-right: 100px;
+    text-align: right;  /*alinea el texto a la derecha*/
+    font-size: 20px;
+}   
+.linkNav{
+    text-decoration: none; /*quita raya de link se hereda del ancla*/
+}
+.linea{
+    display: inline; /*pone una al lado del otro viene en block por defecto*/
+    margin-right: 20px; /*distancia entre palabras*/
+    margin-bottom: 10px;
+}
+/* conf de Bs As*/
+.conf{
+    color: white;
+    padding-top: 15px;
+    height: 1000px;
+    text-align: right;
+    background-image: linear-gradient(to right, #000000cc, #0000004c, #000000bb), url("../assets/img/hawaii.jpg");
+    background-size: contein; /*ocupa todo el contenedor*/
+    background-size: no-repeat;
+    background-position: center;
+    font-family: Tahoma, sans-serifS;
+    /*font-weight: 200;*/
+    font-size: 15px;   /*tamaño*/
+    /*background-attachment: fixed; /*la imagen no se mueve*/
+    }
+.titulo{
+    padding-top: 300px;
+    font-family:Tahoma, sans-serif;
+    font-weight: 200;
+    /*margin-left: 200px;*/
+    text-align: right; 
+    color: white;
+    font-size: 3rem;
+    font-weight: 200px;/*grosor de la fuente*/
+    display:flex;
+    /*flex-direction:*/
+    justify-content: right;
+    align-items: right;  /* mueve el texto*/
+    justify-content: right;
+    margin-right: 120px;
+    margin-bottom: 50px;
+}
+.pPrincipal{
+    display:flex;
+    line-height: 1.5;  /*interlineado*/
+    flex-direction:column;
+    justify-content: right;
+    align-items: right;  /* mueve el texto*/
+    justify-content: right;
+    margin-right: 120px;
+    margin-bottom: 50px;
+    font-size: 1.5rem;/*tamaño de la letra*/
+ }
+
+.bordeV{
+    background-color: green;
+}
+.borde{
+    border: 1px solid rgb(182,182,182);
+}
+.fuenteChica{
+    font-size: 10px;
+}
+.fuenteNormal{
+    font-size: 24px;
+}
+.fuenteGrande{
+    font: 36px;
+}
+.colorNegro{
+    color: black;
+}
+.colorBlanco{
+    color:white ;
+} 
+.colorG{
+    color:rgb(160, 165, 170);
+} 
+.colorGris{
+    background-color:rgb(99, 108, 119) ;
+    color:white;
+}
+.colorVerde{
+    color:rgb(8, 83, 8);
+}  
+/*ORADORES*/
+.colorAmarillo{
+    background-color:gold;
+    color: black;
+}
+.colorCeleste{
+    background-color:deepskyblue ;
+    color:white;
+}
+.colorRojo{
+    background-color: red;
+    color:white;
+}
+.oradores{
+    height: 100vh; /*alto del contenedor*/
+    width: 80%;
+    margin:0 auto;
+    text-align: center;
+}
+.oradores h2{
+    padding-top: 20px;  /*borde superior del contenedor*/
+}
+.tarjeta{  /*contenido de la tarjeta NO LA FOTO*/
+    background-color:white;
+    border: 1px solid rgb(182,182,182);/*  bordea */
+    border-radius: 5px;
+    width: 30%;
+    height: 80%;
+    /*hago que los elementos en bloque se pongan uno al lado del otro */
+    display: inline-block;
+    margin-right: 20px; /*margen entre tarjetas*/
+    margin-top:50px;
+    text-align: left; /*texto hacia la izq*/
+}
+.tarjeta Img{
+    width:100%; /*alto*/
+    height:60%; /**/
+    object-fit: contain;/*controla la deformacion de la imagen*/
+    object-fit: cover;
+    border-radius: 5px 5px 0px 0px;
+}
+.cuerpoTarjeta{
+    margin:10px; /*margen de la tarjeta*/
+}
+.cuerpoTarjeta h4{
+    display:inline-block;
+    border-radius:5px; /* borde redondeado*/
+    margin-right: 5px;
+    padding:0 5px;
+}
+.nombre{
+    margin-top:5px;
+    margin-bottom:20px;
+}
+
+/*octubre*/
+.octubre{
+    height: 50vh;   
+    /*display:flex;
+    flex-direction:column;
+    height:100%;/*alto*/
+    /*display:flex;
+    row-gap: 10px;*/
+}
+/*IMAGENES
+    background-position: center; se estira desde el centro
+    background-size:cover;para que ocupe todo su contenedor
+    background-repeat: no-repeat;
+    
+
+            height:20vh ;alto
+            background-image: linear-gradient(to right, #1d3744, #1d3e4f, #1d455a, #1d4c66, #1e5372);
+            height: auto;  tamaño alto
+            font-size: 1rem; tamaño de la letra bloque
+            font-family: Tahoma, sans-serifS;
+
+    
+clase 11    
+    display:flex; pasan a estar en fila en el eje x 
+    display:block; /es por defecto/
+    /DA DIRECCION AL CONTENEDOR/
+    flex-direction: row; /por defecto/ para determinar que sea fila o columna 
+    flex-direction: column;
+    
+    * flex-wrap: wrap; deja espaciado entre todos los hijos y se acomodan solos
+    flex-wrap: nowrap;/por defecto/ si no entran en el contenedor salten a la linea de abajo
+    flex-wrap: row-reverse;
+    /TRABAJA EN EL EJE PRINCIPAL/
+    justify-content:flex-start;/POR DEFECTO/ se alinea a la izq
+    justify-content: flex-end; alinea hacia la derecha
+    justify-content: center; se centranr
+    justify-content:space-evenly; mismo margen entre ellos
+    justify-content:space-around; deja el mismo espaciado entre todos
+    justify-content:space-between; los de las esquinas se pegan a los laterales
+    
+    /TRABAJA EN EL EJE CONTRARIO/ se desbloquea con display flex
+    align-items:stretch ;/POR DEFECTO/alinea estrecha alos hijos si no tienen valor establecido en el eje contrario del contenedor
+    align-items:center; despega el techo y el piso
+    align-items: end; lo mando al final del contrario ojo es mas potente align-content es mas fuerte poner end
+    
+    align-content:center se habilita con flex-wrap: center; wrap;junta todo sindejar espacios
+    align-content:end;
+    TEXTO ALINEADO
+    text-align:center centra el texto hacia arriba        
+    
+    flex box:
+
+    row-gap:initial le quita el valor
+    column-gap espaciado
+listas   
+    list-style: none; saca los circulitos que viene por defecto    
+/en html/
+    <div class="padrewsp">
+    <a href="">
+        <i class="fa-brands fa-whatsapp wsp"></i>
+    </a>
+</div>    padrewsp{
+    .wsp{
+        color: rgb(10, 133, 10);
+        font-size: 5rem;
+        position: fixed; deja fija el logo de watsap
+        bottom: 0; desde arriba
+        right: 10px; de la derecha
+    }
+}
+PARA CENTRAR TODO las habilita display flex no se hereda
+display: flex;
+justify-content:center;
+align-items:center;
